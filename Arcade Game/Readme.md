@@ -1,0 +1,1 @@
+# This is a simple arcade game where you can control your dinosaur to protect it from dragon.
