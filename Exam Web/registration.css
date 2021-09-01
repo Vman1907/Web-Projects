@@ -1,0 +1,58 @@
+/* state = ["Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujrat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", Kerala", Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttrakhand", "Uttar Pradesh", "West Bengal", "Andaman and Nicobar Island", "Chandigarh", "Dadra and Nagar Haveli and Daman & Diu", "The government of NCT of Delhi", "Jammu & kashmir", "Ladakh", "Lakshdweep", "Puducherry"] */
+
+.row, input, label{
+    display: flex;
+}
+
+.row, .col-lg-6{
+    padding: 0;
+    margin: 0;
+}
+
+span{
+    display: inline;
+    background-color: #34AFFC;
+    padding: 2%;
+    border-radius: 15px ;
+}
+
+.background{
+    margin: 100px 70px;
+    border-top: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 50px;
+    background-color: #83CFFF;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 50%);
+}
+
+form{
+    margin: 20px 0;
+    background-color: #fff ;
+    border: none;
+    border-radius: 30px;
+    padding: 5% 2%;
+}
+
+
+input, select{
+    background-color: #76cbffad;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 2%;
+    outline: none;
+}
+
+.block label,.block input{
+    display: inline;
+}
+
+button{
+    background-color: #4AE290;
+    color: #fff;
+    font-size:larger;
+    margin: auto;
+    border: none;
+    border-radius: 30px;
+    padding: 2%;
+    width: 20%;
+}
