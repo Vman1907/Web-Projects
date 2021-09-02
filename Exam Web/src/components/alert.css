@@ -1,0 +1,26 @@
+.custom-alert{
+    border: none;
+    border-radius: 15px;
+    width: max-content;
+    background-color: #FFEBEB;
+    color: #CB3737;
+    padding: 1% 2%;
+    margin: 20px 0px ;
+}
+
+.custom-alert p{
+    margin: 0;
+}
+
+@media only screen and (max-width: 998px) {
+
+    .custom-alert{
+        border: none;
+        border-radius: 15px;
+        width: max-content;
+        background-color: #FFEBEB;
+        color: #CB3737;
+        padding: 1% 2%;
+        margin: 20px 50px ;
+    }
+}
