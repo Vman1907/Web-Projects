@@ -16,21 +16,27 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="">
     </head>
-    <body style="font-family: 'Montserrat', sans-serif;
-    margin-top: 100px;">
+    <body style="margin-top: 100px;"> <!--remove margin -->
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+            <![endif]-->
+            <div style="
+        backdrop-filter: blur(15px);
+        background-color: rgba(0, 0, 0, 0.438);
+        height: 100vh;
+        width: 100vw;">
         <div style="width: 600px;
-                    height: 375px;
+                    height: 380px;
                     background-image: linear-gradient(#83CFFF, #1F6998);
                     border-radius: 15px;
                     color: #fff;
-                    text-align: center;">
+                    text-align: center;
+                    font-family: 'Montserrat', sans-serif;
+                    margin: auto;">
 
             <div style="position: relative;
-                        bottom: 130px;">
-            <img src="online test png-02 1.svg" alt="">
+                        bottom: 115px;">
+            <img src="online test png-02 1.svg" alt="test-icon">
 
             <h2 style="line-height: 0;
                         font-weight: 600;">TAKE THE TEST NOW!!</h2>
@@ -40,12 +46,13 @@
                                 background-color: #3EEC8E ;
                                 color: #fff;
                                 border-radius: 15px;
-                                font-size: 1.7em;
+                                font-size: 1.4em;
                                 font-weight: 100;
                                 padding: 1% 7%;
                                 margin: 0px auto 25px">START</button>
-            <p style="font-size: 1.2em;">NOT NOW</p>
+            <p style="font-size: 1em;"><a href="#" style="text-decoration: none; color: #fff;">NOT NOW</a></p>
 
+        </div>
         </div>
         </div>
     </body>
