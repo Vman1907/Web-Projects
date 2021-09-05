@@ -3,21 +3,30 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+h3{
+    font-weight: 500;
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
 .status{
-    padding: 1% 10%;
+    padding: 15px 10%;
     background-color: #D9FFEA ;
     width: max-content;
     margin: 50px auto;
-    border-radius: 10px;
+    border-radius: 7px;
     color: #06C15C;
 }
 
 .content{
-    border-radius: 10px;
+    border-radius: 7px;
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.192) ;
-    margin: auto;
-    width: max-content;
-    padding: 2% 2% 0.5% 2%;
+    margin: auto auto 50px;
+    width: 500px;
+    padding: 35px 30px 0.5% 30px;
     text-align: center;
 }
 
@@ -26,9 +35,36 @@ body{
     background-color: #D9FFEA;
     color: #06C15C;
     width: max-content;
-    margin: auto;
-    padding: 2%;
+    margin: 10px auto 30px;
+    padding: 3%;
     width: 40%;
     text-align: center;
+    font-size: large;
+    font-weight: bold;
 }
 
+.content p{
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+a{
+    color: #06C15C;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #089248;
+    text-decoration: none;
+}
+
+/* @media only screen (max-width: 626px) {
+    .content {
+        border-radius: 7px;
+        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.192) ;
+        margin: auto auto 50px;
+        width: max-content;
+        padding: 35px 30px 0.5% 30px;
+        text-align: center;
+    }
+} */
