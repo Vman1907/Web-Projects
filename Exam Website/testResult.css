@@ -1,0 +1,39 @@
+.content{
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.192) ;
+    background-color: #EFFFEF;
+    width: 50%;
+    padding: 1% 2%;
+}
+
+.col-lg-4 h2{
+    color:#06C15C ;
+    margin-top: 13% ;
+    text-align: center;
+}
+
+hr{
+    margin: 0;
+    width: 40%;
+    padding: 0;
+}
+
+p{
+    margin: 5px 5px 10px 0 !important ;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:992px ){
+    .content{
+        border-radius: 10px;
+        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.192) ;
+        background-color: #EFFFEF;
+        width: 50%;
+        padding: 1% 2%;
+        text-align: center;
+    }
+    hr{
+        width: auto;
+    }
+}
