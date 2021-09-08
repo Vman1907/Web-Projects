@@ -21,7 +21,7 @@ Responder State=[
     "Jharkhand",
     "Karnataka",
     "Kerala",
-    "Lakshadeep",
+    "Lakshadweep",
     "Laddakh",
     "Madhya Pradesh",
     "Maharashtra",
