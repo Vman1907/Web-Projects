@@ -1,0 +1,33 @@
+body{
+    background-color: #DCDCDC;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 0;
+}
+
+.wrapper{
+    margin: auto;
+    width: 90%;
+    background-color: #fff;
+    padding: 2%;
+}
+
+span{
+    display: block;
+}
+
+button{
+    margin: 0 43%;
+}
+
+.row p{
+    margin: 0 auto;
+}
+
+.table{
+    display: flex;
+    flex-direction: row;
+}
+
+.table p{
+    margin: 0;
+}
