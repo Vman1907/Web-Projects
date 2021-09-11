@@ -2,7 +2,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
- .data .header{
+.header{
     display: flex;
     flex-direction: column;
     margin: 2rem;
@@ -12,7 +12,7 @@
     letter-spacing: -0.5px;
 }
 
- .data input{
+input{
     border: 2px solid #1F6998;
     margin-right: 2rem;
     padding-left: 1.75rem;
@@ -20,11 +20,11 @@
     outline: none;
 }
 
- .data .filter{
+.filter{
     margin: 2rem;
 }
 
- .data .selector{
+.selector{
     padding: 0.5% 0;
     background-color: #DBE3FF;
     margin: 2rem;
@@ -32,28 +32,33 @@
     border-radius: 25px;
 }
 
- .data #all, .data  #registered, .data  #interested{
+#all, #registered, #interested{
+    user-select: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
     cursor: pointer;
     margin: auto 1rem auto 0.5rem;
     padding: 0.5% 2.5%;
     border-radius: 30px;
 }
 
- .data .active{
+.active{
     background-color: #5CA1F1;
 }
 
- .data .filter .icon{
+.filter .icon{
     padding: 0 0.5%;
     width: 20px;
     position: absolute;
 }
 
- .data img{
+img{
     width: 18px;
 }
 
- .data .data-content{
+.data-content{
     padding: 2%;
     margin-left: 2rem;
     border: 1px solid black;

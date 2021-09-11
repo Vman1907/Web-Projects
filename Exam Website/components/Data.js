@@ -33,11 +33,12 @@ export default function Data(){
                 <input type="text" placeholder=""/>
             </span>
             <span className="selector">
-                <span onClick={clickhandler} id="all">All student</span>
+                <span onClick={clickhandler} id="all" className="active">All student</span>
                 <span onClick={clickhandler} id="registered">Registered</span>
                 <span onClick={clickhandler} id="interested">Interested</span>
             </span>
-            <div className="data-content"></div>
+            <div className="row data-content">
+            </div>
         </div>
         </div>
         </div>
