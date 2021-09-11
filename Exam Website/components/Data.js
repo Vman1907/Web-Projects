@@ -20,7 +20,7 @@ export default function Data(){
 
             </div>
         <div className="col-10">
-            <span className="header">Student management</span>
+            <span className="header">Student Management</span>
             <span className="filter">
             <span className="icon">
                 <img src={Search} alt="saerch"></img>
