@@ -1,0 +1,65 @@
+.data{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ .data .header{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    margin-top: 0.75rem;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+ .data input{
+    border: 2px solid #1F6998;
+    margin-right: 2rem;
+    padding-left: 1.75rem;
+    border-radius: 20px;
+    outline: none;
+}
+
+ .data .filter{
+    margin: 2rem;
+}
+
+ .data .selector{
+    padding: 0.5% 0;
+    background-color: #DBE3FF;
+    margin: 2rem;
+    display: flex;
+    border-radius: 25px;
+}
+
+ .data #all, .data  #registered, .data  #interested{
+    cursor: pointer;
+    margin: auto 1rem auto 0.5rem;
+    padding: 0.5% 2.5%;
+    border-radius: 30px;
+}
+
+ .data .active{
+    background-color: #5CA1F1;
+}
+
+ .data .filter .icon{
+    padding: 0 0.5%;
+    width: 20px;
+    position: absolute;
+}
+
+ .data img{
+    width: 18px;
+}
+
+ .data .data-content{
+    padding: 2%;
+    margin-left: 2rem;
+    border: 1px solid black;
+    height: 200px;
+    border-radius: 20px;
+    width: 95%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
