@@ -1,0 +1,25 @@
+.rating{
+    margin: 0.5rem;
+}
+
+.col-1{
+    border: 0.5px solid black;
+    text-align: center;
+    padding: 1%;
+}
+
+.col-1:hover{
+    background-color: rgba(0, 0, 0, 0.096);
+    cursor: pointer;
+}
+
+
+.active{
+    background-color: #053870;
+    color: #fff;
+}
+
+.active:hover{
+    background-color: #053870;
+    color: #fff;
+}
