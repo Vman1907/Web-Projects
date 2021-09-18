@@ -1,0 +1,45 @@
+.background{
+    background-color: rgba(0, 0, 0, 0.253);
+    backdrop-filter: blur(5px);
+    height: 100vh;
+    padding: 10rem 0;
+    font-family: 'Montserrat', sans-serif;;
+    font-weight: 600;
+}
+
+.popup{
+    display: flex;
+    margin: auto;
+    background-color: #fff ;
+    border-radius: 20px;
+    width: max-content;
+    border: 1px solid black;
+    padding: 0.25% 1%;
+}
+
+
+span{
+    display: flex;
+    margin: 1rem;
+}
+
+input{
+    margin: auto 0;
+    width: 1.5rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+label{
+    margin:auto 2rem auto 0.5rem;
+}
+
+img{
+    margin: 3rem 0;
+    width: 10rem;
+}
+
+button{
+    display: flex;
+    margin: 1.25rem 1rem;
+}
