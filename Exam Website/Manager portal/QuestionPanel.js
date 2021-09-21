@@ -52,8 +52,8 @@ export default function Question(){
         <div className="question">
             <span>Question Panel</span>
             <form>
-            <div className="row selector justify-content-center">
-               <div className="col-5">
+            <div className="row selector justify-content-between">
+               <div className="col-4">
                    <span>Section</span>
                    <select name="section" value={data.section} onChange={changeHandler}>
                        <option>Science & Mathematics</option>
@@ -63,7 +63,7 @@ export default function Question(){
                        <option>Coding and Aptitude</option>
                    </select>
                </div> 
-               <div className="col-5">
+               <div className="col-4">
                    <span>Type</span>
                    <select name="type" value={data.type} onChange={changeHandler}>
                        <option>Text</option>
@@ -74,13 +74,13 @@ export default function Question(){
                </div>
             </div>
             <div className="row q_selector justify-content-center">
-                <div className="col-10">
+                <div className="col-12">
                     <span>Question</span>
-                    <textarea name="question" value={data.question} onChange={changeHandler} rows="6" cols="93"/>
+                    <textarea name="question" value={data.question} onChange={changeHandler} rows="10"/>
                 </div>
             </div>
-            <div className="row options_selector justify-content-center">
-                <div className="col-5">
+            <div className="row options_selector justify-content-between">
+                <div className="col-3">
                     <span>Options</span>
                     <span className="options"><span>A</span>
                     <input name="a" value={data.options.a} onChange={optionsChangeHandler} type="text"/>
@@ -95,7 +95,7 @@ export default function Question(){
                     <input name="d" value={data.options.d} onChange={optionsChangeHandler} type="text"/>
                     </span>
                 </div>
-                <div className="col-5 answer">
+                <div className="col-3 answer">
                     <span>Answer</span>
                     <select name="answer" value={data.answer} onChange={changeHandler}>
                         <option>a</option>

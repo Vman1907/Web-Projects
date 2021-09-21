@@ -7,8 +7,12 @@
     font-weight: 600;
 }
 
+form{
+    padding: 2% 20%;
+}
+
 .row{
-    margin: 2rem 0;
+    margin: 2rem 0 1rem;
 }
 
 .selector span, .q_selector span{
@@ -18,7 +22,7 @@
 
 .selector select{
     background-color: #DBE3FF;
-    padding: 1%;
+    padding: 4% 3%;
     border-radius: 10px;
     border: none;
     outline: none;
@@ -29,7 +33,9 @@
     background-color: #dddddd;
     border: none;
     outline: none;
-    padding: 1%;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    resize: none;
 }
 
 .options_selector .options{
@@ -39,7 +45,7 @@
 .options_selector input{
     margin-left: 1rem;
     background-color: #dddddd;
-    padding: 0.5% 1%;
+    padding: 2% 3%;
     border-radius: 10px;
     border: none;
     outline: none;
@@ -53,11 +59,11 @@
     margin-bottom: 2rem;
     display: flex;
     background-color: #DBE3FF;
-    padding: 1%;
+    padding: 5% 3%;
     border-radius: 10px;
     border: none;
     outline: none;
-    width: 35%;
+    width: 100%;
 }
 
 .answer span:nth-child(3){
@@ -70,9 +76,10 @@
 }
 
 #file_input input{
-    width: 40%;
+    cursor:pointer;
+    width: 100%;
     background-color: #DBE3FF;
-    padding: 1.5%;
+    padding: 5%;
     justify-content: center;
 }
 #file_input input::-webkit-file-upload-button{
@@ -83,7 +90,7 @@ button{
     border: none;
     outline: none;
     border-radius: 10px;
-    padding: 3% 6%;
+    padding: 5% 8%;
     background-color: #DBE3FF;
     margin: 0 auto;
     width: fit-content;
