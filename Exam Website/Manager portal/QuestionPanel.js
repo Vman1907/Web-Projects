@@ -7,6 +7,7 @@ export default function Question(){
     const [data, setData] = useState({
         section: "Science & Mathematics",
         type: "Text",
+        question:"",
         options: {
             a: "",
             b: "",
@@ -45,7 +46,6 @@ export default function Question(){
         }else{
             $("span#file_input").addClass("hidden")
         }
-        
     })
 
     return(
@@ -76,7 +76,7 @@ export default function Question(){
             <div className="row q_selector justify-content-center">
                 <div className="col-10">
                     <span>Question</span>
-                    <textarea  rows="6" cols="93"/>
+                    <textarea name="question" value={data.question} onChange={changeHandler} rows="6" cols="93"/>
                 </div>
             </div>
             <div className="row options_selector justify-content-center">
