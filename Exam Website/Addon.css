@@ -8,25 +8,16 @@
     border-radius: 10px;
 }
 
-.col-5{
+.col-lg-5{
     padding: 0;
 }
 
 img{
-    height: 17rem;
+    height: 100%;
 }
 
-.col-6{
+.col-lg-6{
     padding: 1%;
-}
-
-#arrow {
-    border-right:2px solid black;
-    border-bottom:2px solid black;
-    width:10px;
-    height:10px;
-    transform: rotate(-45deg);
-    margin-top:40px;
 }
 
 li{
