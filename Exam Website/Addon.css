@@ -1,0 +1,39 @@
+.row{
+    background-color: #404B69;
+    margin: 3rem auto;
+    padding: 0;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+.col-5{
+    padding: 0;
+}
+
+img{
+    height: 17rem;
+}
+
+.col-6{
+    padding: 1%;
+}
+
+#arrow {
+    border-right:2px solid black;
+    border-bottom:2px solid black;
+    width:10px;
+    height:10px;
+    transform: rotate(-45deg);
+    margin-top:40px;
+}
+
+li{
+    list-style:none;
+}
+
+li::before{
+    content: "\003E";
+    margin-right: 0.5rem;
+}
