@@ -77,6 +77,7 @@ function changeName(){
     else{
         userName=temp;
         window.localStorage.setItem('name', userName);
+        document.title = "Welcome, " + userName;
     }
 }
 
@@ -85,8 +86,9 @@ reload();
 
 
 function reload(){
-
+    
     userName = localStorage.getItem('name');
+    document.title = "Welcome, " + userName;
 
     var hours = new Date().getHours();
     var min = new Date().getMinutes();
