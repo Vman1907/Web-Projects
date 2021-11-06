@@ -1,0 +1,149 @@
+body{
+    background-image: url(assets/zetong-li-UZ3V6AV5y4o-unsplash.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.shortcuts{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.shortcuts a{
+    border-radius: 10px;
+    width: 3.5rem;
+    margin: 2rem 0 0.5rem;
+    padding: 2% 5%;
+    background-color: rgba(255, 255, 255, 0.185);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.432);
+    backdrop-filter: blur(5px);
+    transition: 0.4s;
+}
+
+.shortcuts::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.icons img{
+    width: 100%;
+}
+
+.shortcuts a:hover{
+    background-color: rgba(255, 255, 255, 0.274);
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+#netflix{
+    width: 56%;
+    display: flex;
+    margin: auto;
+}
+
+#meet{
+    margin: 0.2rem 0 ;
+}
+
+#spotify{
+    margin: 5% 0;
+}
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#time{
+    font-size: 9rem;
+    color: white;
+}
+
+#greetings{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.texts form{
+    margin-top: 3rem;
+    display: flex;
+}
+
+.texts form img{
+    height: 2rem;
+    margin-right: 0.5rem;
+}
+
+.texts input{
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 0 0.75rem;
+    background-color: rgba(255, 255, 255, 0.301);
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+.date{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.date div:nth-child(1){
+    padding: 1rem 2rem 1rem 0;
+    text-align: right;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    transition:0.3s ;
+}
+
+.date button{
+    margin: 1rem 2rem;
+}
+
+.visibility{
+    visibility: hidden;
+}
+
+.popup{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.432);
+    backdrop-filter: blur(5px);
+}
+
+.popup{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+.popup input{
+    margin: auto 0;
+    height: 3rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.popup button{
+    margin: auto 0;
+    height: 3rem;
+    margin-left: 1rem;
+}

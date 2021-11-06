@@ -3,14 +3,15 @@ var month = new Date().getMonth();
 var year = new Date().getFullYear();
 var weekDay = new Date().getDay();
 
-
 var greetings = "";
 var mon="";
 var weekDayy="";
+var userName = "User";
 
 const time = document.getElementById("time");
-const greet = document.querySelector(".welcome h2");
-const date = document.querySelector(".date");
+const greet = document.getElementById("greetings");
+const date = document.getElementById("date");
+const Day = document.getElementById("day");
 
 
 switch (month+1){
@@ -28,14 +29,14 @@ switch (month+1){
     case 12 : mon="December"; break;
 }
 
-switch(weekDay + 1){
-    case 1 : weekDayy = "Monday"; break;
-    case 2 : weekDayy = "Tuesday"; break;
-    case 3 : weekDayy = "Wednesday"; break;
-    case 4 : weekDayy = "Thursday"; break;
-    case 5 : weekDayy = "Friday"; break;
-    case 6 : weekDayy = "Saturday"; break;
-    case 7 : weekDayy = "Sunday"; break;
+switch(weekDay){
+    case 0 : weekDayy = "Monday"; break;
+    case 1 : weekDayy = "Tuesday"; break;
+    case 2 : weekDayy = "Wednesday"; break;
+    case 3 : weekDayy = "Thursday"; break;
+    case 4 : weekDayy = "Friday"; break;
+    case 5 : weekDayy = "Saturday"; break;
+    case 6 : weekDayy = "Sunday"; break;
 }
 
 if(day === 1){
@@ -51,22 +52,50 @@ else {
     var newDay = day + "th ";
 }
 
-date.innerHTML = newDay + ", " + mon + " " + year + " " + weekDayy;
+date.innerHTML = newDay + ", " + mon + " " + year;
+Day.innerHTML = weekDayy;
+
+function openPopup(){
+    document.getElementById('popup').classList.remove("visibility");
+}
+
+function closePopup(){
+    document.getElementById('popup').classList.add("visibility");
+}
+
+function changeName(){
+    
+    document.getElementById('popup').classList.add("visibility");
+    var temp = "";
+    temp = document.getElementById('userName').value;
+
+    if(temp === ""){        
+        alert("Enter valid name");
+    }
+    else{
+        userName=temp;
+        window.localStorage.setItem('name', userName);
+    }
+}
+
 
 reload();
 
+
 function reload(){
+
+    userName = localStorage.getItem('name');
+
     var hours = new Date().getHours();
-    // const hours = 18;
     var min = new Date().getMinutes();
     if(hours >=0 && hours<12){
         time.innerHTML = ("0" + hours).slice(-2) + ':' +("0" + min).slice(-2);
-        greetings = "Good Morning, Varshmaan Sonkar.";
+        greetings = "Good Morning, " + userName;
     } 
     
     else if(hours>=12 && hours<16){
     
-        greetings = "Good Afternoon, Varshmaan Sonkar.";
+        greetings = "Good Afternoon, " + userName;
     
         if(hours >12 ){
             time.innerHTML = ("0" + (hours-12)).slice(-2) + ':' + ("0" + min).slice(-2);
@@ -77,16 +106,14 @@ function reload(){
     
     else if(hours >=16 && hours<21) {
         time.innerHTML = ("0" + (hours-12)).slice(-2) + ':' + ("0" + min).slice(-2);
-        greetings="Good Evening, Varshmaan Sonkar.";
+        greetings="Good Evening, " + userName;
     } 
     
     else {
         time.innerHTML = ("0" + (hours-12)).slice(-2) + ':' + ("0" + min).slice(-2);
-        greetings="Good Night, Varshmaan Sonkar."
+        greetings="Good Night, " + userName;
     
     }
-    
-    console.log(min);
 
     greet.innerHTML = greetings;
     setTimeout(() => {
