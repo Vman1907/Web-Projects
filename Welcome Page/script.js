@@ -30,14 +30,16 @@ switch (month+1){
 }
 
 switch(weekDay){
-    case 0 : weekDayy = "Monday"; break;
-    case 1 : weekDayy = "Tuesday"; break;
-    case 2 : weekDayy = "Wednesday"; break;
-    case 3 : weekDayy = "Thursday"; break;
-    case 4 : weekDayy = "Friday"; break;
-    case 5 : weekDayy = "Saturday"; break;
-    case 6 : weekDayy = "Sunday"; break;
+    case 0 : weekDayy = "Sunday"; break;
+    case 1 : weekDayy = "Monday"; break;
+    case 2 : weekDayy = "Tuesday"; break;
+    case 3 : weekDayy = "Wednesday"; break;
+    case 4 : weekDayy = "Thursday"; break;
+    case 5 : weekDayy = "Friday"; break;
+    case 6 : weekDayy = "Saturday"; break;
 }
+
+console.log(weekDay);
 
 if(day === 1){
     var newDay = day + "st ";
