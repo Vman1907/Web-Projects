@@ -72,12 +72,11 @@ function changeName(){
     temp = document.getElementById('userName').value;
 
     if(temp === ""){        
-        alert("Enter valid name");
+        alert("Enter a name");
     }
     else{
         userName=temp;
         window.localStorage.setItem('name', userName);
-        document.title = "Welcome, " + userName;
     }
 }
 
@@ -86,9 +85,8 @@ reload();
 
 
 function reload(){
-    
+
     userName = localStorage.getItem('name');
-    document.title = "Welcome, " + userName;
 
     var hours = new Date().getHours();
     var min = new Date().getMinutes();
@@ -124,3 +122,7 @@ function reload(){
         reload();
     }, 1000);
 }
+
+document.getElementById("editName").addEventListener("click", openPopup);
+document.getElementById("changeName").addEventListener("click", changeName);
+document.getElementById("closePopup").addEventListener("click", closePopup);

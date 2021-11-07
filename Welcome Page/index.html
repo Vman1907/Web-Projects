@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Welcome Page</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,42 +27,42 @@
             <div class="shortcuts col-2">
                 <a href="https://mail.google.com/mail/u/0/#inbox">
                     <div class="icons">
-                        <img src="/Assets/" alt="gmail">
+                        <img src="assets/gmail.svg" alt="gmail">
                     </div>
                 </a>
                 <a href="https://www.youtube.com/">
                     <div class="icons">
-                        <img src="/Assets/" alt="youtube">
+                        <img src="assets/youtube.svg" alt="youtube">
                     </div>
                 </a>
                 <a href="https://github.com/">
                     <div class="icons">
-                        <img src="/Assets/" alt="github">
+                        <img src="assets/iconmonstr-github-1.svg" alt="github">
                     </div>
                 </a>
                 <a href="https://netflix.com/">
                     <div class="icons">
-                        <img id="netflix" src="/Assets/" alt="netflix">
+                        <img id="netflix" src="assets/netflix-seeklogo.com.svg" alt="netflix">
                     </div>
                 </a>
                 <a href="https://www.udemy.com/">
                     <div class="icons">
-                        <img src="/Assets/" alt="udemy">
+                        <img src="assets/udemy-icon.svg" alt="udemy">
                     </div>
                 </a>
                 <a href="https://classroom.google.com/h">
                     <div class="icons">
-                        <img src="/Assets/" alt="classroom">
+                        <img src="assets/google-classroom.svg" alt="classroom">
                     </div>
                 </a>
                 <a href="https://meet.google.com/">
                     <div class="icons">
-                        <img id="meet" src="/Assets/" alt="meet">
+                        <img id="meet" src="assets/google-meet.svg" alt="meet">
                     </div>
                 </a>
                 <a href="https://open.spotify.com/">
                     <div class="icons">
-                        <img id= "spotify" src="/Assets/" alt="spotify">
+                        <img id= "spotify" src="assets/spotify-2.svg" alt="spotify">
                     </div>
                 </a>
             </div>
@@ -83,16 +83,16 @@
                 <span id="date"></span>
                 <span id="day"></span>
                 </div>
-                    <button type="button" class="btn btn-outline-secondary" onclick="openPopup()">Edit Name</button>
+                    <button id="editName" class="btn btn-outline-secondary">Edit Name</button>
             </div>
 
             
         </div>
         <div id="popup" class="popup visibility">
                 <input id="userName" type="text" placeholder="enter name" autocomplete="off">
-                <button type="button" class="btn btn-primary" onclick="changeName()">Submit</button>
-                <button type="button" class="btn btn-secondary" onclick="closePopup()">Cancel</button>
+                <button id="changeName" class="btn btn-primary">Submit</button>
+                <button id="closePopup" class="btn btn-secondary">Cancel</button>
         </div>
-        <script src="script.js" async defer></script>
+        <script src="script.js"></script>
     </body>
 </html>

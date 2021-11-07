@@ -1,0 +1,10 @@
+{
+    "name": "Welcome Page",
+    "version": "0.0.1",
+    "icons": {"128":"assets/favicon-32x32.png"},
+    "description": "Replace new tab with a personal dashboard with google serach.",
+    "manifest_version": 2,
+    "chrome_url_overrides":{
+        "newtab": "index.html"
+    }
+}
